@@ -10,7 +10,6 @@
     <script src="js/vue-resource.min.js"></script>
     <script src="js/ip_js.js"></script>
 </head>
-
 <body class="w-100 text-info bg-faded">
 <div class="bg-primary">
     <div class="container">
@@ -63,8 +62,8 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr v-for="value in mydata">
-                        <td>{{$index+1}}</td>
+                    <tr v-for="(value,index) in mydata">
+                        <td>{{index+1}}</td>
                         <td>中国</td>
                         <td>{{value[0]}}</td>
                         <td>{{value[1]}}</td>
