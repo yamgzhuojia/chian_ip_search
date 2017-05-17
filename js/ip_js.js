@@ -5,9 +5,9 @@ window.onload=function(){
     new Vue({
         el: '#box',
         data: {
-            mydata: []
+            mydata: [["117.135.198.11", 80, 5], ["47.89.49.178", 3128, 9]]
         },
-        ready: function () {
+        mounted: function () {
             this.$http.jsonp('http://ip.api.yangzhuojia.com/', {}, {
                 jsonp: 'callback'
             }).then(function (res) {
